@@ -1,10 +1,12 @@
 # Build and deployment outputs
 lambda_layer_output/
 lambda_function_output/
+layer_content/
 spare_layer/
 *.zip
 function.zip
 layer.zip
+build_layer.sh
 
 # Logs and build artifacts
 *.log
@@ -34,6 +36,9 @@ wheels/
 *.egg
 pip-log.txt
 pip-delete-this-directory.txt
+.venv/
+venv/
+env/
 
 # Testing
 test_*.py
@@ -68,3 +73,4 @@ Thumbs.db
 response.json
 *.cache
 *.pyo
+.claude/
