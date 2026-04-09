@@ -19,7 +19,7 @@ AWS Lambda function for extracting identifiers (INBSHIP, BATCH) from delivery no
 - **PyPDF2** for PDF manipulation
 - **Pillow (PIL)** for image processing
 - **pyzbar** for barcode detection
-- **AWS Lambda** deployment
+- **AWS Lambda** runtime
 
 ## Setup
 
@@ -31,7 +31,7 @@ AWS Lambda function for extracting identifiers (INBSHIP, BATCH) from delivery no
 
 The Lambda handler expects a JSON payload with base64-encoded document content:
 
-```python
+```json
 {
   "document": "<base64-encoded-file-content>",
   "filename": "delivery_note.pdf"
@@ -39,7 +39,7 @@ The Lambda handler expects a JSON payload with base64-encoded document content:
 ```
 
 Returns identified codes:
-```python
+```json
 {
   "inbship": "12345",
   "batch": "1234567",

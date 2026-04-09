@@ -39,6 +39,8 @@ pip-delete-this-directory.txt
 .venv/
 venv/
 env/
+.pytest_cache/
+*.egg-info/
 
 # Testing
 test_*.py
